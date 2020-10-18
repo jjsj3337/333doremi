@@ -36,7 +36,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000, 600);
+  createCanvas(1000, 800);
   // Start classifying
   // The sound model will continuously listen to the microphone
   classifier.classify(gotResult);
@@ -46,7 +46,7 @@ function draw() {
   background(0);
   // Draw the label in the canvas
   fill(255);
-  textSize(32);
+  textSize(48);
   textAlign(CENTER, CENTER);
   text(label, width / 2, height / 2);
 }
